@@ -26,8 +26,18 @@
  <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic|Raleway:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,700,800,700italic' rel='stylesheet' type='text/css'>
     
+ 
 <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
 <link href="catalog/view/theme/default/stylesheet/app.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="catalog/view/javascript/respond.min.js"></script>
+  <![endif]-->
+<link href="catalog/view/theme/default/stylesheet/sequence-theme.pop-slide.css" rel="stylesheet" media="all">
+  <script src="catalog/view/javascript/imagesloaded.pkgd.min.js"></script>
+  <script src="catalog/view/javascript/hammer.min.js"></script>
+  <script src="catalog/view/javascript/sequence.min.js"></script>
+  <script src="catalog/view/javascript/sequence-theme.pop-slide.js"></script>
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
@@ -153,6 +163,70 @@
     </div>
   </div>
 </header>
+	
+	  <div id="sequence" class="seq">
+
+    <div class="seq-screen">
+      <ul class="seq-canvas">
+
+        <li class="seq-step1 seq-in">
+          <div data-seq class="seq-title">
+            <h2>Powered by Sequence.js</h2>
+            <a class="seq-button" href="http://sequencejs.com/">View Now ></a>
+			
+			
+          </div>
+
+          <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small>
+        </li>
+
+        <li class="seq-step2">
+          <div data-seq class="seq-title">
+            <h2>Create Unique Animated Themes</h2>
+            <a class="seq-button" href="http://sequencejs.com/">View Now ></a>
+          </div>
+
+          <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/4904378820">Kmeron</a></small>
+        </li>
+
+        <li class="seq-step3">
+          <div data-seq class="seq-title">
+            <h2>Rapid Development of Step-Based Applications</h2>
+            <a class="seq-button" href="http://sequencejs.com/">View Now ></a>
+          </div>
+
+          <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/4202305377">Kmeron</a></small>
+        </li>
+
+        <li class="seq-step4">
+          <div data-seq class="seq-title">
+            <h2>Your Title Here</h2>
+            <a class="seq-button" href="#">View Now ></a>
+          </div>
+
+          <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5554955749">Kmeron</a></small>
+        </li>
+
+        <li class="seq-step5">
+          <div data-seq class="seq-title">
+            <h2>Your Title Here</h2>
+            <a class="seq-button" href="#">View Now ></a>
+          </div>
+
+          <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5363867810">Kmeron</a></small>
+        </li>
+      </ul>
+    </div>
+
+    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+      <li><a href="#step1" rel="step1" title="Go to slide 1">Kaki King</a></li>
+      <li><a href="#step2" rel="step2" title="Go to slide 2">Micky Green</a></li>
+      <li><a href="#step3" rel="step3" title="Go to slide 3">Scampi</a></li>
+      <li><a href="#step4" rel="step4" title="Go to slide 4">Puggy</a></li>
+      <li><a href="#step5" rel="step5" title="Go to slide 5">Godspeed You! Black Emperor</a></li>
+    </ul>
+  </div>
+	
 <?php if ($categories) { ?>
 <div class="container _hd">
   <nav id="menu" class="navbar">
