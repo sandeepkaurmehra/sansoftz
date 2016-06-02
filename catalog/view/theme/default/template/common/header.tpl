@@ -71,7 +71,7 @@
     </div>
   </div>
 </nav>
-<header>
+<header class="navbar-fixed-top">
   <div class="container">
     <div class="row">
       <div class="col-sm-2">
@@ -85,6 +85,51 @@
       </div>
 	<div class="col-sm-8 pd0"> 
 	  <div class="col-sm-1 _nav"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	                <div class="_sn">						
+								<ul class="nav">                                                                     			 
+								  <li class="active"><a href="#">shop by category</a>
+										 <ul class="_cnav">
+											  <li><a href="">Women's Ethnic Wear</a></li>
+											  <li><a href="#">Sarees</a></li>
+											  <li><a href="#">Anarkali</a></li>
+											  <li><a href="">Kurtis</a></li>                                                                              
+										 </ul> 
+
+								  </li>
+								  <li><a href="#">shop by color</a>                                                                        
+										<ul class="_cnav cs">  
+											  <li id="white"><label>White</label></li>  
+											  <li id="black"><label>Black</label></li>  
+											  <li id="gray"><label>Gray</label></li>  
+											  <li id="brown"><label>Brown</label></li> 
+											  <li id="purple"><label>Purple</label></li>  
+											  <li id="pink"><label>Pink</label></li>  
+											  <li id="blue"><label>Blue</label></li>  
+											  <li id="green"><label>Green</label></li>  
+											  <li id="yellow"><label>Yellow</label></li>  
+											  <li id="orange"><label>Orange</label></li>  
+											  <li id="red"><label>Red</label></li>  
+											  <li id="multicolor" class="last-child"><label>Multicolor</label></li> 
+										</ul>                                                                      
+								  </li>
+								   <li><a href="#">offers</a>                                                                          
+									  <div class="offers">  
+										 <figure class="col-sm-6"><img src="catalog/view/theme/default/image/jew1.jpg" alt="image" class="img-responsive"/></figure>  
+										 <figure class="col-sm-6"><img src="catalog/view/theme/default/image/jew2.jpg" alt="image" class="img-responsive"/></figure>
+									  </div>                                                                         
+								   </li>
+								  <li><a href="#">Today's Deals</a>
+									 <div class="offers">
+										<figure class="col-sm-12"><img src="catalog/view/theme/default/image/deals.jpg" alt="image" class="img-responsive"/></figure> 
+									 </div>
+
+								  </li> 
+								 
+								</ul>
+							  <figure class="_catimg"><img src="catalog/view/theme/default/image/pic1.jpg" alt="image" /></figure>
+
+						  
+				   </div>
       <div class="col-sm-11 pd0"><?php echo $search; ?>   </div>
 	</div>
       <div class="col-sm-2 _rlink"><?php //echo $cart; ?>
@@ -109,7 +154,7 @@
   </div>
 </header>
 <?php if ($categories) { ?>
-<div class="container">
+<div class="container _hd">
   <nav id="menu" class="navbar">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>

@@ -11,11 +11,9 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
-root { 
-    display: block;
-}
+root {display: block;}
 ._hd{ display: none;}
-header{ margin-top: 20px;}
+header{background: #fff none repeat scroll 0 0;padding-top: 15px; border-bottom: 1px solid #ddd;}
 #logo  h1{ margin-top:0;}
 #logo a{font-family:"Raleway",sans-serif; font-size: 44px; line-height: 34px; font-weight: 600; color:#000;  text-transform: lowercase;}
 #logo a:hover{color: #5e5e5e;}
@@ -23,7 +21,7 @@ header{ margin-top: 20px;}
 ._nav  .fa{ color: #888;font-size: 21px; font-weight: 300; line-height: 38px;}
 .col-sm-1._nav{width:5.5%;}
 #search  .input-lg{ border: 1px solid #ddd; box-shadow: inherit;border-radius:0; color:#333; font-size: 14px;}
-#search  .btn-default {background-color: #f16d85;background-image: none; border-color: #f16d85;color: #fff;font-size: 18px;}
+#search  .btn-default {background-color: #1a4b85;background-image: none; border-color: #1a4b85;color: #fff;font-size: 18px;}
 #search .btn-lg{ padding:9px 15px; border-radius: 0;}
 #search  .fa{font-size:20px;}
 .pl{ padding-left:0;}
@@ -31,7 +29,8 @@ header{ margin-top: 20px;}
 /*#search  .btn-default:hover , #search  .btn-default:focus, ._nav:hover, ._nav:focus{ background-color: yellowgreen; border-color:#3eb366; color:#fff;}
 */
 #search  .btn-default:hover , #search  .btn-default:focus{ background-color: #000; border-color:#000; color:#fff;}
-._nav:hover{ background-color: #f16d85; border-color:#f16d85; color:#fff;}
+#search .glyphicon{ top:0;}
+._nav:hover{ background-color: #1a4b85; border-color:#1a4b85; color:#fff;}
 ._nav:focus{ background-color: #000; border-color:#000; color:#fff;}
 ._nav:hover .fa{color:#fff;}
 #cart button{ background:none; border:none;box-shadow: none;text-shadow: none; color:#333;}
@@ -40,21 +39,52 @@ header{ margin-top: 20px;}
 ._rlink ul{margin: 0; padding: 0;list-style: none;}
 ._rlink ul li { display: inline-block; }
 ._rlink ul li a {display: block;  padding: 3px 6px; text-decoration: none; }
-._rlink .fa{ border: 1px solid #e1e0e0;
-    border-radius: 50%;
-    color: #888;
-    font-size: 16px;
-    padding: 8px;}
+._rlink .fa{ border: 1px solid #e1e0e0;border-radius: 50%; color: #888; font-size: 16px; padding: 8px;}
 ._rlink .fa:hover{border-color: #000; color:#fff; background:#000;}
+._rlink .glyphicon{border: 1px solid #ddd;border-radius: 50%;color: #888;font-size: 16px;padding: 8px;}
+._rlink .glyphicon:hover{border-color: #1a4b85; color:#1a4b85;}
+._rlink  sup {color: #000;font-size: 12px;font-weight: bold; right: 20px; top: 11px;  vertical-align: top;}
 
-._rlink .glyphicon{border: 1px solid #e1e0e0;border-radius: 50%;color: #888;font-size: 16px;padding: 8px;}
-._rlink .glyphicon:hover{border-color: #f16d85; color:#f16d85;}
+._nav:hover  ._sn {display: block;}
+/*._nav:hover ._sn {transform: translateX(110px); visibility: visible; display: block;}*/
+._sn{ display:none;background-color:#fff; border: 1px solid #e1e0e0;left: 0;position: absolute;right: 0;top: 50px;transform: translateX(0px);transition: all 0s ease 0s, all 0.3s ease 0s;   /*    display: $hide;*/}
+._sn  .nav{background: #eee; padding: 15px 0 5px 15px; height: 243px; position: relative;}
+._sn  .nav > li{background: #eee;float: none; margin-bottom: 0; margin-top: 10px;position: unset;}
+._sn  .nav > li > a{font-size: 12px; font-family: "Open Sans",sans-serif; text-transform: uppercase; color: #555; padding:8px 15px 8px 15px; width: 200px;}
+._sn  .nav > .active > a, ._smenu  .nav > .active > a:hover, ._smenu  .nav > .active > a:focus{ background: #fff; color:#000;}
+._sn .nav > li > a:hover, ._smenu  .nav > li > a:focus{background: #fff; color:#000;}
+._sn  .nav> li:hover ._cnav , ._sn  .nav > li:focus ._cnav{display:block;}
+._cnav{display: none;}
+._cnav{background: #fff; bottom: 0;left: 218px; margin-top: 0;padding: 18px 0 0; position: absolute; top: 0; width: 100%; list-style: outside none none; margin-bottom: 0;}
+._cnav li{width:310px;display: block; position: relative;}
+._cnav li a{font-size: 12px; text-transform: capitalize; color: #000;border-bottom: 1px dotted #999; padding: 11px 15px; display:block; position:relative;}
+._cnav li:hover a{ color: #1a4b85; border-color: #1a4b85; background-color: transparent;}
+._catimg{ bottom: 0; z-index: 99; height: 100%; position: absolute; right: 0; top:0;} 
+.box { @include border-radius(0); }
+.cs{list-style: outside none none; margin-bottom: 0; width: 300px;}
+.cs li::before {color: #fff; display: block; font-family: icomoon; font-size: 14px; margin-left: 2px; margin-top: -30px;position: absolute;text-indent: 0;transition: all 0.2s ease 0s;}
+.cs li {cursor: pointer; text-indent: -99999px;}
+.cs li { border: 1px solid transparent; border-radius: 15px; cursor: pointer;float: left; height: 26px; margin: 15px 20px;overflow: hidden; position: relative; text-indent: -99999px;  width: 26px;}
+.cs li#black {background-color: #000;}
+.cs  li#white {background-color: #fff; border: 1px solid #ccc;}
+.cs  li#gray {background-color: #9fa8ab;}
+.cs  li#brown {background-color: #8b4513;}
+.cs  li#purple {background-color: purple;}
+.cs  li#pink {background-color: #ffcbdb;}
+.cs  li#blue {background-color: #0aa5e2;}
+.cs  li#green {background-color: #45bf55;}
+.cs  li#yellow {background-color: #ff0;}
+.cs  li#orange {background-color: #ff7f00;}
+.cs  li#red {background-color: #e60d41;}
+.cs  li#multicolor {background: url("../image/multi-color.png") no-repeat;}
+.cs  label {display: inline-block;font-weight: bold; margin-bottom: 5px; max-width: 100%;}
+._sn  .nav> li:hover .offers , ._sn  .nav> li:focus .offers{display:block;}
+.offers{display: none;}
+.offers {background: #fff; bottom: 0;left: 218px; margin-top: 7px;padding: 15px 0 0; position: absolute; top: 0;}
+.offers img{ display: inline-block;}
+._sn  .nav> .offers:hover ._catimg, ._sn  .nav> .offers:focus ._catimg{display: none; z-index: -99999;}
+._oleft{ float: left; width:50%;left: 24px;position: absolute;}
+._oright{float: right;left: 325px;position: absolute;right: 0;width: 50%;}
+.pd0{padding:$pd0;}
 
- ._rlink  sup {
-    color: #000;
-    font-size: 12px;
-    font-weight: bold;
-    right: 20px;
-    top: 11px;  vertical-align: top;
-}
 
