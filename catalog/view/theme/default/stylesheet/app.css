@@ -1,0 +1,60 @@
+/* 
+    Document   : custom
+    Created on : Jun 1, 2016, 2:30:27 PM
+    Author     : Sandy
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+._hd{ display: none;}
+header{ margin-top: 20px;}
+#logo  h1{ margin-top:0;}
+#logo a{font-family:"Raleway",sans-serif; font-size: 44px; line-height: 34px; font-weight: 600; color:#000;  text-transform: lowercase;}
+#logo a:hover{color: #5e5e5e;}
+._nav{ border:1px solid #ddd; color:#757575; cursor:pointer; border-right:0;}
+._nav  .fa{ color: #888;font-size: 21px; font-weight: 300; line-height: 38px;}
+.col-sm-1._nav{width:5.5%;}
+#search  .input-lg{ border: 1px solid #ddd; box-shadow: inherit;border-radius:0; color:#333; font-size: 14px;}
+#search  .btn-default {background-color: #f16d85;background-image: none; border-color: #f16d85;color: #fff;font-size: 18px;}
+#search .btn-lg{ padding:9px 15px; border-radius: 0;}
+#search  .fa{font-size:20px;}
+.pl{ padding-left:0;}
+.pd0{ padding:0;}
+/*#search  .btn-default:hover , #search  .btn-default:focus, ._nav:hover, ._nav:focus{ background-color: yellowgreen; border-color:#3eb366; color:#fff;}
+*/
+#search  .btn-default:hover , #search  .btn-default:focus{ background-color: #000; border-color:#000; color:#fff;}
+._nav:hover{ background-color: #f16d85; border-color:#f16d85; color:#fff;}
+._nav:focus{ background-color: #000; border-color:#000; color:#fff;}
+._nav:hover .fa{color:#fff;}
+#cart button{ background:none; border:none;box-shadow: none;text-shadow: none; color:#333;}
+#cart > .btn{color:#333;}
+._rlink{float:right; padding-left:0; padding-right:0;}
+._rlink ul{margin: 0; padding: 0;list-style: none;}
+._rlink ul li { display: inline-block; }
+._rlink ul li a {display: block;  padding: 3px 6px; text-decoration: none; }
+._rlink .fa{ border: 1px solid #e1e0e0;
+    border-radius: 50%;
+    color: #888;
+    font-size: 16px;
+    padding: 8px;}
+._rlink .fa:hover{border-color: #000; color:#fff; background:#000;}
+
+._rlink .glyphicon{border: 1px solid #e1e0e0;border-radius: 50%;color: #888;font-size: 16px;padding: 8px;}
+._rlink .glyphicon:hover{border-color: #f16d85; color:#f16d85;}
+
+ ._rlink  sup {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    right: 20px;
+    top: 11px;  vertical-align: top;
+}
+
